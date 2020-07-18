@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATATURK Tribute Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Shortcut Icon -->
+    <link rel="shortcut icon" href="data:image/png;base64,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"/>
+</head>
+<body>
+    <main class="container-fluid" id="main">
+        <h1 id="title">M. Kemal Ataturk</h1> 
+        <p id="description">The Great Leader</p>
+        
+        <div id="img-div">
+            <img id="image" src="https://i4.hurimg.com/i/hurriyet/75/1110x740/5dc453677152d800c88b12d0.jpg" alt="M.Kemal Ataturk">
+            <p id="img-caption"> A Great Soldier and President</p>
+        </div>
+
+        <article id="tribute-info">
+            <h3 id="headline">Brief Story of M. Kemal Ataturk</h3>
+            
+            <p>Mustafa Kemal Atatürk; (1881 – 10 November 1938), was a Turkish field marshal, revolutionary statesman, author, and the founding father of the Republic of Turkey, serving as its first President from 1923 until his death in 1938. His benevolent dictatorship undertook sweeping progressive reforms, which modernized Turkey into a secular, industrial nation. Ideologically a secularist and nationalist, his policies and theories became known as Kemalism. Due to his military and political accomplishments, Atatürk is regarded according to studies as one of the greatest leaders of the 20th century.</p>
+            <br>
+            <p>Atatürk was a Turkish nationalist leader and founder and first president of the republic of Turkey.
+
+                Mustafa Kemal Atatürk was born in 1881 in Salonika (now Thessaloniki) in what was then the Ottoman Empire. His father was a minor official and later a timber merchant. When Atatürk was 12, he was sent to military school and then to the military academy in Istanbul, graduating in 1905.
+                
+                In 1911, he served against the Italians in Libya and then in the Balkan Wars (1912 - 1913). He made his military reputation repelling the Allied invasion at the Dardanelles in 1915.
+                
+                In May 1919, Atatürk began a nationalist revolution in Anatolia, organising resistance to the peace settlement imposed on Turkey by the victorious Allies. This was particularly focused on resisting Greek attempts to seize Smyrna and its hinterland. Victory over the Greeks enabled him to secure revision of the peace settlement in the Treaty of Lausanne.
+                
+                In 1921, Atatürk established a provisional government in Ankara. The following year the Ottoman Sultanate was formally abolished and, in 1923, Turkey became a secular republic with Atatürk as its president. He established a single party regime that lasted almost without interruption until 1945.
+                
+                He launched a programme of revolutionary social and political reform to modernise Turkey. These reforms included the emancipation of women, the abolition of all Islamic institutions and the introduction of Western legal codes, dress, calendar and alphabet, replacing the Arabic script with a Latin one. Abroad he pursued a policy of neutrality, establishing friendly relations with Turkey's neighbours.
+                
+                In 1935, when surnames were introduced in Turkey, he was given the name Atatürk, meaning 'Father of the Turks'. He died on 10 November 1938.</p>
+            
+            <p id="p-for-quote">Here is a quote from Ataturk:</p>
+            <blockquote cite="https://www.goodreads.com/author/quotes/2793859.Mustafa_Kemal_Atat_rk">
+                “Heroes who shed their blood and lost their lives! You are now lying in the soil of a friendly country. Therefore rest in peace. There is no difference between the Johnnies and Mehmets to us where they lie side by side here in this country of ours. You, the mothers, who sent their sons from far away countries wipe away your tears; your sons are now lying in our bosom and are in peace. After having lost their lives on this land they have become our sons as well.”
+            </blockquote>
+    
+            <h3 id="source-link">
+            If you have time, you should read more about this incredible human being on his
+                
+                <a id="tribute-link" href="https://en.wikipedia.org/wiki/Mustafa_Kemal_Atat%C3%BCrk" target="_blank">Wikipedia entry</a>.
+            </h3>
+            </article>
+    </main>
+</body>
+</html>
